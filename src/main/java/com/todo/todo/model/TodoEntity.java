@@ -19,7 +19,7 @@ import org.hibernate.annotations.GenericGenerator;
 public class TodoEntity {
     @Id
     @GeneratedValue(generator="system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    @GenericGenerator(name="system-uuid", strategy = "uuid")
     private String id;
     private String userId;
     private String title;

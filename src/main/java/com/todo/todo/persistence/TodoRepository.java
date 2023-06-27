@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface TodoRepository extends JpaRepository<TodoEntity, String> {
-    @Query("select * from Todo t where t.userId = ?1")
+public interface TodoRepository extends JpaRepository<TodoEntity, String>{
     List<TodoEntity> findByUserId(String userId);
 }
