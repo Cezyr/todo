@@ -1,4 +1,4 @@
-package com.todo.todo;
+package com.example.todo;
 
 import lombok.Builder;
 import lombok.NonNull;
@@ -8,6 +8,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class TodoModel {
 
-    @NonNull
-    private String id;
+	@NonNull
+	private String id;
 }
